@@ -43,7 +43,7 @@ public class DriversController : ControllerBase
         {
             return BadRequest();
         }
-        if(driver.name == string.Empty)
+        if(driver.Name == string.Empty)
         {
             ModelState.AddModelError("Name", "El Driver no debe estar vacio");
         }
@@ -61,7 +61,7 @@ public class DriversController : ControllerBase
         {
             return BadRequest();
         }
-        if (driver.name == string.Empty)
+        if (driver.Name == string.Empty)
         {
             ModelState.AddModelError("Name","El driver no deberia estar vacio");
         }

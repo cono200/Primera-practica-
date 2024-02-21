@@ -6,7 +6,7 @@ using MongoDB.Bson;
 using MongoDB.Driver;
 
 namespace Drivers.Api.Services;
-
+//AAAAAA
 public class DriverServices
 {
     private readonly IMongoCollection<Driver> _driversCollection;
@@ -23,8 +23,8 @@ public class DriverServices
             (databaseSettings.Value.CollectionName);
         }
 
-        public async Task<List<Driver>> GetAsync() =>
-        await _driversCollection.Find(_ => true).ToListAsync();
+       public async Task<List<Driver>>GetAsync()=>
+    await _driversCollection.Find(_=> true).ToListAsync();
 
         public async Task<Driver> GetDriverId(string id)
         {

@@ -1,6 +1,4 @@
 
-
-
 using MongoDB.Bson;
 using MongoDB.Bson.Serialization.Attributes;
 
@@ -14,11 +12,10 @@ public class Driver
     public string Id{get; set;} = string.Empty;
     
     [BsonElement("Name")]
-    public string name{get; set;} = string.Empty;
-        [BsonElement("number")]
-    public int number{get; set;}
-        [BsonElement("Team")]
-        public string Team{get; set;} = string.Empty;
+    public string Name{get; set;} = string.Empty;
+   // public int Number {get; set;}
+    public int Number {get; set;}
+    public string Team{get; set;} = string.Empty;
 
 
 }
